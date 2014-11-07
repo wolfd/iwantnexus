@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I Want A Nexus 6 Options</title>
+</head>
+<link href="reset.css" type="text/css" rel="stylesheet">
+<style>
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000;
+	background-color:#FFFFFF;
+	padding:5px;
+}
+
+strong {
+	font-weight:bold;
+}
+</style>
+<body>
+
+<div>
+	<label for="refresh_interval"><strong>Refresh Interval (ms):</strong></label>
+	<input type="text" id="refresh_interval">
+</div>
+<br>
+<div>
+	<label for="api_key"><strong>Pushbullet Access Token:</strong></label>
+	<a href="https://www.pushbullet.com/account" target="_blank">?</a>
+	<input type="text" id="api_key" size="50">
+</div>
+<br>
+<div id="devices">
+	Enter your Pushbullet Access Token above and click save to view available devices for notifications to be pushed to. 
+</div>
+<br>
+<button id="save">Save</button>
+<button id="test">Test</button>
+
+</body>
+</html>
+
+<script src="jquery.min.js"></script>
+<script src="pushbullet.js"></script>
+<script src="options.js"></script>

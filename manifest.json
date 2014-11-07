@@ -1,15 +1,14 @@
 {
   "name": "I want nexus",
   "description": "I want nexus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "content_scripts": [
     {
         "matches": ["https://play.google.com/store/devices/*"],
-        "js": ["insertion.js"]
+        "js": ["jquery.min.js","pushbullet.js","iwantnexus.js"]
     }
   ],
-  "web_accessible_resources": [
-      "iwantnexus.js"
-  ],
+  "options_page": "options.html",
+  "permissions": ["storage"],
   "manifest_version": 2
 }
